@@ -6,7 +6,14 @@ const handleSubmit = () => {
     axios.post('/start', {
       number
     }).then(res => {
-      window.open(res.data);
+      const windowName = 'userConsole';
+      const popUp = window.open('/popup-page.php', windowName, 'width=1000, height=700, left=24, top=24, scrollbars, resizable');
+      if (popUp == null || typeof(popUp)=='undefined') {  
+        alert('Please disable your pop-up blocker and click the "Open" link again.'); 
+      } 
+      else {  
+        window.open(res.data);
+      }
     })
   }
 }
