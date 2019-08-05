@@ -16,6 +16,10 @@ app.get('/', (req, res, next) => {
   res.sendFile(path.join(__dirname, 'index.html'))
 })
 
+app.get('/sitemap.xml', (req, res, next) => {
+  res.sendFile(path.join(__dirname, 'sitemap.xml'))
+})
+
 app.post('/start', (req, res) => {
   res.send(`https://api.whatsapp.com/send?phone=${req.body.number}`)
 })
