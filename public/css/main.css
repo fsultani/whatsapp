@@ -528,3 +528,9 @@ textarea.input100 {
   color: #333333;
   line-height: 1.2;
 }
+
+.error {
+  color: #d14444;
+  padding-bottom: 10px;
+  text-align: center;
+}
