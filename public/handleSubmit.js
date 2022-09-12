@@ -1,7 +1,6 @@
 const handleSubmit = () => {
   const phoneNumber = document.whatsAppForm.phoneNumber;
-  let number = phoneNumber.value;
-  // let number = phoneNumber.value.replace(/\s/g, '');
+  let number = phoneNumber.value.replace(/\s/g, '');
 
   if (typeof number !== 'string') {
     const errorMessage = document.querySelector('.error-message')
