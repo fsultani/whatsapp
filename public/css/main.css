@@ -187,7 +187,7 @@ iframe {
 
 .label-input100 {
   font-family: Poppins-Regular;
-  font-size: 13px;
+  font-size: 17px;
   color: #666666;
   line-height: 1.5;
   padding-left: 5px;
@@ -529,7 +529,7 @@ textarea.input100 {
   line-height: 1.2;
 }
 
-.error {
+.error-message {
   color: #d14444;
   padding-bottom: 10px;
   text-align: center;

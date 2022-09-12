@@ -3,9 +3,8 @@ const handleSubmit = () => {
   let number = phoneNumber.value;
 
   if (typeof number !== 'string') {
-    const errorMessage = document.querySelector('.error')
-    errorMessage.innerHTML = 'Invalid input'
-    return;
+    const errorMessage = document.querySelector('.error-message')
+    return errorMessage.innerHTML = 'Invalid input';
   }
 
   const hasPlusSymbol = number.charAt(0) === '+'
